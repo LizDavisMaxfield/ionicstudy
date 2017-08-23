@@ -6,11 +6,18 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { GrammarPage } from '../pages/grammar/grammar';
+import { SpeakingPage } from '../pages/speaking/speaking';
+import { VocabularyPage } from '../pages/vocabulary/vocabulary';
+
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage, 
+    GrammarPage,
+    SpeakingPage,
+    VocabularyPage,
   ],
   imports: [
     BrowserModule,
@@ -19,7 +26,10 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    GrammarPage,
+    SpeakingPage,
+    VocabularyPage,
   ],
   providers: [
     StatusBar,
