@@ -14,12 +14,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'vocabulary.html',
 })
 export class VocabularyPage {
+  levels: Array<number> = [1,2,3,4,5];
+  currentLevel: number = this.levels[0];
+  assessmentsTaken: number = 9;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad VocabularyPage');
+  }
+
+  backToDash(){
+    this.navCtrl.pop()
   }
 
 }
