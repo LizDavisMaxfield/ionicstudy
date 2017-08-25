@@ -14,10 +14,36 @@
 </ion-header> -->
 
 
-<ion-content padding>
-    <ion-icon name="arrow-back" (click)="backToDash()"></ion-icon>Vocabulary
-
-  {{assessmentsTaken}} Assessments Taken
-  <select [ngModel]="currentLevel"><option *ngFor="let level of levels" [ngValue]="level">Level {{level}}</option>
-  </select><ion-icon name="arrow-down"></ion-icon>
+<ion-content id="vocab-page" padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-2>
+        <ion-icon class="back-icon" name="md-arrow-back" (click)="back()"></ion-icon>
+      </ion-col>
+      <ion-col col-10>
+        <ion-row class="title">Vocabulary</ion-row>
+        <ion-row class="page-sub-title">
+          <ion-col col-7> {{assessmentsTaken}} Assessments Taken</ion-col>
+          <ion-col col-5>
+              <ion-select align="right" class="full-width-select" interface="popover" [(ngModel)]="currentLevel">
+                <ion-option  *ngFor="let level of levels" [value]="level">Level {{level}}</ion-option>
+              </ion-select>
+        </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row class="grid-wrapper">
+      <!-- <ion-col col-11 align="center"> -->
+          <canvas height="230" class="progress-line-grid" #lineCanvas></canvas>
+      <!-- </ion-col> -->
+    </ion-row>
+    <ion-row> 
+      <ion-col text-center>  
+        <button ion-button class="default-button" (click)="viewAssessmentPage()" outline>START NEW ASSESSMENT</button>
+      </ion-col>
+    </ion-row>      
+  </ion-grid>
+  
+  
+  
 </ion-content>

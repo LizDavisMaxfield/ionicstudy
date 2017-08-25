@@ -1,0 +1,62 @@
+page-assessment {
+
+}
+
+.question-card {
+    background-color: color($colors, light);
+    padding: 3.5em 4em;
+    color: color($colors, arc-background);
+    margin: 80px auto;
+    border-radius: 4px;
+    z-index: 20;
+}
+
+.back-button {
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+.progress-wrapper {
+    position: relative;
+    margin: 5px auto;
+    font-size: 14px;
+    padding: 6px;
+}
+
+.progress-container {
+    width: 60px;
+    font-size: 14px;
+}
+
+.current {
+    position: absolute;
+    color: color($colors, light);
+    font-weight: 100;
+    line-height: 1;
+    top: 50%; 
+    bottom: auto; 
+    left: 50%; 
+    transform: translateY(-50%) translateX(-50%); 
+}
+
+.title-row {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.answer-wrapper {
+    position: relative;
+   
+}
+.answer-options {
+    z-index: 10;
+    position: absolute;
+   left: 12%;
+   top: 30%;
+}
+
+.margin-20 {
+    margin: 10px;
+}
+

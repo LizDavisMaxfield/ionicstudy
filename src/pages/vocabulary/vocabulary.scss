@@ -1,3 +1,32 @@
 page-vocabulary {
-
+  
 }
+
+#vocab-page {
+    background-color: color($colors, arc-background);
+    color: #ffffff
+}
+
+.page-title {
+    font-size: 28px;
+}
+
+.page-sub-title {
+    align-items: baseline;
+    margin-top: -10px;
+}
+.full-width-select {
+    max-width: 100%;
+    padding: 0px 5px;
+    font-size: 18px;
+}
+
+.progress-line-grid {
+    background-color: #000000;
+    padding:15px;
+}
+
+.grid-wrapper {
+    padding: 25px 15px
+}
+

@@ -1,0 +1,45 @@
+
+<ion-content id="vocab-page" padding>
+    <ion-grid>
+      <ion-row class="title-row">
+          <span class="progress-container" (click)="back()">CANCEL</span>
+          <span class="title center accent">{{assessmentType}}</span>
+          <div class="progress-container">
+             <div class="progress-wrapper">
+               <div class="current">{{current}}</div>
+              <round-progress color="#6dce93" [current]="current" [stroke]="10" [duration]="1" [responsive]="true" [max]="max"></round-progress>
+              </div>
+          </div>
+        </ion-row>
+      <ion-row class="question-text center">
+          {{currentQuestion}}
+      </ion-row>
+      <ion-row class="answer-wrapper">
+        <ion-row class="answer-options">
+           <div class="margin-20 progress-container">
+              <div class="progress-wrapper">
+                <div class="current">YES</div>
+               <round-progress color="#4e91fc" [current]="1" [stroke]="10" [duration]="1" [responsive]="true" [max]="1"></round-progress>
+               </div>
+           </div>
+           <div class="margin-20 progress-container">
+              <div class="progress-wrapper">
+                <div class="current">???</div>
+               <round-progress color="#b45fe2" [current]="1" [stroke]="10" [duration]="1" [responsive]="true" [max]="1"></round-progress>
+               </div>
+           </div>
+           <div class="margin-20 progress-container">
+              <div class="progress-wrapper">
+                <div class="current">NO</div>
+               <round-progress color="red" [current]="1" [stroke]="10" [duration]="1" [responsive]="true" [max]="1"></round-progress>
+               </div>
+           </div>
+          </ion-row>
+        <ion-row class="question-card">{{prompt}}</ion-row>
+      </ion-row>
+    </ion-grid>
+    
+    
+    
+  </ion-content>
+  

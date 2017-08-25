@@ -9,7 +9,8 @@ import { HomePage } from '../pages/home/home';
 import { GrammarPage } from '../pages/grammar/grammar';
 import { SpeakingPage } from '../pages/speaking/speaking';
 import { VocabularyPage } from '../pages/vocabulary/vocabulary';
-
+import { AssessmentPage } from '../pages/assessment/assessment'
+import { RoundProgressModule } from "angular-svg-round-progressbar/dist";
 
 @NgModule({
   declarations: [
@@ -18,10 +19,12 @@ import { VocabularyPage } from '../pages/vocabulary/vocabulary';
     GrammarPage,
     SpeakingPage,
     VocabularyPage,
+    AssessmentPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    RoundProgressModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -30,6 +33,7 @@ import { VocabularyPage } from '../pages/vocabulary/vocabulary';
     GrammarPage,
     SpeakingPage,
     VocabularyPage,
+    AssessmentPage
   ],
   providers: [
     StatusBar,
